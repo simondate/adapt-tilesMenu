@@ -63,7 +63,7 @@ define([
     var BoxMenuItemView = MenuView.extend({
 
         events: {
-            'click .viewtext' : 'onClickMenuItemButton',
+            'click .menu-item-inner' : 'onClickMenuItemButton',
             'click #tilemenupopup' : 'menunotifyPopup'
         },
 

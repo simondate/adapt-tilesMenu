@@ -2,6 +2,10 @@
 .location-menu {
 	overflow-y: hidden;
 
+	.toolbox .toolbox-inner {
+		float: left;
+	}
+
 	#accessibility-toggle {
 		display: inline-block !important;
 	}
@@ -25,9 +29,9 @@
 .location-menu .navigation-drawer-toggle-button {
     right: 67% !important;
 }
-.location-menu .drawer .drawer-holder {
-    padding-top: 0px;
-}
+// .location-menu .drawer .drawer-holder {
+//     padding-top: 0px;
+// }
 .location-menu .drawer .drawer-toolbar {
     top: 0px;
     left: 0px;
@@ -46,7 +50,7 @@
 		padding:@menu-body-padding;
 
 		.menu-header {
-			display: inline-block;
+				display: inline-block;
 		    position: fixed;
 		    width: 33%;
 		    height: 100%;
@@ -63,7 +67,8 @@
 			    height: 100%;
 			    text-align: left;
 			    text-shadow: none !important;
-			    background-color: @tertiary-color !important;
+			    background-color: @primary-color-inverted !important;
+
 			    border:none;
 			    border-right: 1px solid @white;
 
@@ -71,12 +76,12 @@
 					height: auto;
 				    overflow: hidden;
 				    position: absolute;
-				    bottom: 44vh;
+				    top: 20vh;
 				    width: 80%;
-				    font-size: 30px !important;
-				    line-height: 36px !important;
+				    // font-size: 30px !important;
+				    // line-height: 36px !important;
     				padding-bottom: 5px;
-    				color: @tertiary-color-inverted !important;
+    				color: @white;
     				margin-bottom:@menu-title-padding-bottom;
 				}
 
@@ -98,7 +103,7 @@
 				    position: absolute;
 				    bottom: 0px;
 				    width: 80%;
-				    color: @tertiary-color-inverted !important;
+				    color: @primary-color !important;
 				    margin-bottom:@menu-title-padding-bottom;
 
 			    	.menu-body-inner {

@@ -1,5 +1,6 @@
 <div class="menu-item-inner" style="{{#if _graphic.src}} background: url({{_graphic.src}}); background-size: cover; background-repeat: no-repeat; background-position: center;{{/if}} height: 50vh;" aria-label="{{_globals._menu._tilesmenu.menuItem}}" {{#if _globals._menu._tilesmenu.menuItem}}tabindex="0"{{/if}}>
     <div class="menu-item-title">
+        <div class="menu-item-title-number">{{{_nthChild}}}</div>
         <div class="menu-item-title-inner h3" role="heading" aria-level="2" tabindex="0">{{{compile displayTitle}}}</div>
     </div>
     <!-- <div class="menu-item-button">

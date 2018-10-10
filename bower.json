@@ -1,11 +1,11 @@
 {
   "name": "adapt-tilesMenu",
-  "version": "3.0.8",
+  "version": "3.1.0",
   "framework": ">=2.1",
   "homepage": "https://github.com/mike-st/adapt-tilesmenu",
-  "displayName": "Scrolling Tiles Menu",
+  "displayName": "Tiles Menu",
   "menu": "tilesmenu",
-  "description": "A menu with tiles that scroll vertically.",
+  "description": "A menu with tiles",
   "main": "js/adapt-tilesmenu.js",
   "keywords": [
     "adapt-plugin",

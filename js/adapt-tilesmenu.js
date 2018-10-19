@@ -25,17 +25,17 @@ define([
             /* COUNTS MENU ITEMS AND PLACES NUMBER */
             $(".menu-item").each(function(i) {
                 $(this).attr('name', 'nth-child-' + parseInt(i+1));
-                $(this).find(".menu-item-button").attr('data-content', ++i);
-                $('.menu-item-button[data-content="' + i + '"]').click(function(){
+                $(this).find(".menu-item-body").attr('data-content', ++i);
+                $('.menu-item-body[data-content="' + i + '"]').click(function(){
                     /* Below addes page number in for the menu */
                     $('.navpagenum').text( 'Page ' + i + ' of ' + nthChild );
                     $('.arianavpgnum').text( 'Page ' + i + ' of ' + nthChild ).attr('role','region').attr('tabindex','0').addClass('aria-label');
                 });
 
                 //BELOW COUNTS BODY MESSAGE STRING COUNT IF TOO LONG MAKES BUTTON
-                var myPtag = $('.menu-item-button[data-content="' + i + '"] .origbutton').find('p:first');
+                var myPtag = $('.menu-item-body[data-content="' + i + '"] .menu-item-body-inner').find('p:first');
                 if(myPtag.text().length >= 200){
-                    $('.menu-item-button[data-content="' + i + '"] .origbutton p:first').addClass('myPtag').html($('.menu-item-button[data-content="' + i + '"] .origbutton p:first').html().substring(0, 200) + " ...<br/>" + "<div id=\"tilemenupopup\">+ Read more</div>");
+                    $('.menu-item-body[data-content="' + i + '"] .menu-item-body-inner p:first').addClass('myPtag').html($('.menu-item-body[data-content="' + i + '"] .menu-item-body-inner p:first').html().substring(0, 200) + " ...<br/>" + "<div id=\"tilemenupopup\">+ Read more</div>");
                 }
             });
 

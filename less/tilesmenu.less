@@ -217,6 +217,39 @@
 				}
 			}
 		}
+
+		&:hover {
+			.origbutton {
+				background-color: rgba(100,100,100,0.9);
+				color: @white;
+				cursor: default;
+				top: 0;
+
+				&:before {
+					content: 'Click or tap View to start.';
+					display: block;
+					font-size: 15px;
+					font-weight: 700;
+					color: @quaternary-color-inverted;
+					font-style: italic;
+					letter-spacing: 1px;
+					text-align: center;
+					width: 100%;
+				}
+
+				.viewtext {
+					background-color: @quaternary-color-inverted !important;
+					color: @quaternary-color !important;
+					cursor: pointer;
+				}
+
+				#tilemenupopup {
+					color: @quaternary-color !important;
+					background-color: @quaternary-color-inverted !important;
+					cursor: pointer;
+				}
+			}
+		}
 	}
 
 	.menu-graphic a {
@@ -310,37 +343,6 @@
 
 			.myPtag {
 				display: block;
-			}
-
-			&:hover {
-				background-color: rgba(100,100,100,0.9);
-				color: @white;
-				cursor: default;
-				top: 0;
-
-				&:before {
-					content: 'Click or tap View to start.';
-					display: block;
-					font-size: 15px;
-					font-weight: 700;
-					color: @quaternary-color-inverted;
-					font-style: italic;
-					letter-spacing: 1px;
-					text-align: center;
-					width: 100%;
-				}
-
-				.viewtext {
-					background-color: @quaternary-color-inverted !important;
-					color: @quaternary-color !important;
-					cursor: pointer;
-				}
-
-				#tilemenupopup {
-					color: @quaternary-color !important;
-					background-color: @quaternary-color-inverted !important;
-					cursor: pointer;
-				}
 			}
 
 			&.visited {
